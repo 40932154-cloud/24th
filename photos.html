@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相片集錦 - 第24期進階培育營</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            margin: 0; 
+            background-color: #0b2545; /* 沿用海報深藍色 */
+            color: #ffffff; 
+            text-align: center; 
+        }
+        header { 
+            background: linear-gradient(135deg, #134074, #0b2545); 
+            padding: 40px 20px; 
+            border-bottom: 4px solid #e9c46a; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+        }
+        
+        /* 照片網格排版 */
+        .photo-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+        }
+        
+        /* 單張照片外框卡片 */
+        .photo-card { 
+            background: #ffffff; 
+            padding: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+            transition: transform 0.3s;
+        }
+        .photo-card:hover {
+            transform: scale(1.03);
+        }
+        
+        /* 照片本身樣式 */
+        .photo-card img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; /* 自動裁切填滿，避免變形 */
+            border-radius: 4px; 
+        }
+        
+        /* 照片底下的文字說明 */
+        .photo-desc { 
+            color: #0b2545; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            font-size: 1rem;
+        }
+        
+        /* 返回首頁按鈕 */
+        .back-btn { 
+            display: inline-block; 
+            margin: 40px 0; 
+            padding: 12px 30px; 
+            background: #e9c46a; 
+            color: #0b2545; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            font-weight: bold; 
+            transition: background 0.2s;
+        }
+        .back-btn:hover { 
+            background: #f4a261; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📸 相片集錦</h1>
+        <p>記錄培育營的精采瞬間</p>
+    </header>
+
+    <div class="container">
+        <!-- 照片網格區域開始 -->
+        <div class="photo-grid">
+        
+            <!-- 第一張照片（請自行修改圖片名稱與說明） -->
+            <div class="photo-card">
+                <img src="camp1.jpg" alt="營隊照片">
+                <div class="photo-desc">第一天 🌟 開訓典禮合影</div>
+            </div>
+
+            <!-- 第二張照片 -->
+            <div class="photo-card">
+                <img src="camp2.jpg" alt="營隊照片">
+                <div class="photo-desc">小組討論 💡 腦力激盪時刻</div>
+            </div>
+
+            <!-- 第三張照片 -->
+            <div class="photo-card">
+                <img src="camp3.jpg" alt="營隊照片">
+                <div class="photo-desc">發表會 🎤 成果展示與發表</div>
+            </div>
+            
+        </div>
+        <!-- 照片網格區域結束 -->
+
+        <a href="index.html" class="back-btn">← 返回首頁</a>
+    </div>
+
+</body>
+</html>
 

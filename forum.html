@@ -23,17 +23,17 @@
             font-size: 2.5rem;
         }
         .container { 
-            max-width: 900px; 
+            max-width: 700px; 
             margin: 40px auto; 
             padding: 0 20px; 
-            text-align: left; /* 留言板內容靠左易讀 */
+            text-align: left; 
         }
         
         .intro-box {
             background: rgba(255, 255, 255, 0.1);
             border-left: 5px solid #e9c46a;
             padding: 20px;
-            border-radius: 4px;
+            border-radius: 8px;
             margin-bottom: 40px;
         }
         .intro-box h2 {
@@ -45,16 +45,44 @@
             line-height: 1.6;
         }
 
-        /* 留言板容器 */
-        .giscus-container {
+        /* Slido 專屬巨型按鈕區域 */
+        .slido-container {
             background: #ffffff;
-            padding: 30px;
+            padding: 40px 20px;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
             margin-bottom: 40px;
         }
         
-        /* 返回首頁按鈕的外框 */
+        /* 模擬海報撞色設計的 Slido 按鈕 */
+        .slido-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #f4a261, #e76f51); /* 海報亮橘色漸層 */
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 20px 40px;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(231, 111, 81, 0.4);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid #ffffff;
+        }
+        
+        .slido-btn:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(231, 111, 81, 0.6);
+            background: linear-gradient(135deg, #e76f51, #f4a261);
+        }
+
+        .slido-tip {
+            color: #666666;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+        
         .btn-wrapper {
             text-align: center;
         }
@@ -79,7 +107,7 @@
 
     <header>
         <h1>💬 觀點交流板</h1>
-        <p>針對課程提出觀點與疑問，互相切磋、共同成長</p>
+        <p>第 24 期進階培育營 ｜ 即時互動提問與觀點分享</p>
     </header>
 
     <div class="container">
@@ -87,29 +115,16 @@
         <!-- 交流板規則說明 -->
         <div class="intro-box">
             <h2>📢 發言守則</h2>
-            <p>1. 歡迎在此提出任何關於領導力課程、思辨任務的疑問。</p>
-            <p>2. 看到其他同學的提問，若你知道答案，請不吝在下方留言為其解答。</p>
-            <p>3. 請保持理性溝通，尊重多元觀點。</p>
+            <p>1. 歡迎點擊下方按鈕，針對課程內容提出你的疑問或獨到觀點。</p>
+            <p>2. 本系統採用 Slido，學員<b>完全不需註冊登入</b>即可匿名發言。</p>
+            <p>3. 看到其他同學提出精彩的觀點，可以幫他<b>點擊讚（按讚）</b>，讓好問題被看見！</p>
         </div>
 
-        <!-- 留言板核心區塊 -->
-        <div class="giscus-container">
-            <!-- 這裡會自動生成輸入框、問題列表與解答回覆區 -->
-            <script src="https://giscus.app"
-                data-repo="abby2008506-source/24th"
-                data-repo-id="R_kgDON7xxxx" 
-                data-category="Announcements"
-                data-category-id="DIC_kwDON7xxxx"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="top"
-                data-theme="light"
-                data-lang="zh-TW"
-                crossorigin="anonymous"
-                async>
-            </script>
+        <!-- Slido 巨型按鈕區塊 -->
+        <div class="slido-container">
+            <!-- 教學：請將 href="#" 裡面的 # 換成你專屬的 Slido 房間網址 -->
+            <a href="#" target="_blank" class="slido-btn">🚀 點此開啟 Slido 觀點交流板</a>
+            <p class="slido-tip">💡 提示：點擊後會自動開啟新視窗跳轉至 Slido 互動專區</p>
         </div>
 
         <div class="btn-wrapper">
@@ -119,4 +134,3 @@
 
 </body>
 </html>
-

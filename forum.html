@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>觀點交流板 - 第24期進階培育營</title>
+    <style>
+        /* 沿用海報的科技深藍色 */
+        body { 
+            font-family: 'Helvetica Neue', Arial, 'Microsoft JhengHei', sans-serif; 
+            margin: 0; 
+            background-color: #0b2545; 
+            color: #ffffff; 
+            text-align: center; 
+        }
+        header { 
+            background: linear-gradient(135deg, #134074, #0b2545); 
+            padding: 50px 20px; 
+            border-bottom: 4px solid #edf2f4; 
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+        .container { 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            text-align: left; /* 留言板內容靠左易讀 */
+        }
+        
+        .intro-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 5px solid #e9c46a;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
+        .intro-box h2 {
+            margin-top: 0;
+            color: #e9c46a;
+        }
+        .intro-box p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        /* 留言板容器 */
+        .giscus-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 40px;
+        }
+        
+        /* 返回首頁按鈕的外框 */
+        .btn-wrapper {
+            text-align: center;
+        }
+        .back-btn { 
+            display: inline-block; 
+            margin-top: 20px; 
+            padding: 12px 35px; 
+            background: #e9c46a; 
+            color: #0b2545; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            font-weight: bold; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background: #f4a261;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💬 觀點交流板</h1>
+        <p>針對課程提出觀點與疑問，互相切磋、共同成長</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 交流板規則說明 -->
+        <div class="intro-box">
+            <h2>📢 發言守則</h2>
+            <p>1. 歡迎在此提出任何關於領導力課程、思辨任務的疑問。</p>
+            <p>2. 看到其他同學的提問，若你知道答案，請不吝在下方留言為其解答。</p>
+            <p>3. 請保持理性溝通，尊重多元觀點。</p>
+        </div>
+
+        <!-- 留言板核心區塊 -->
+        <div class="giscus-container">
+            <!-- 這裡會自動生成輸入框、問題列表與解答回覆區 -->
+            <script src="https://giscus.app"
+                data-repo="abby2008506-source/24th"
+                data-repo-id="R_kgDON7xxxx" 
+                data-category="Announcements"
+                data-category-id="DIC_kwDON7xxxx"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="zh-TW"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="index.html" class="back-btn">← 返回首頁</a>
+        </div>
+    </div>
+
+</body>
+</html>
 

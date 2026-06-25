@@ -3,99 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的活動官方網站</title>
+    <title>新世紀領導人才培育營</title>
     <style>
-        /* 1. 全域基本設定 */
-        body {
-            font-family: "Microsoft JhengHei", Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 30px;
-        }
-
-        /* 2. 方塊的容器：自動變成一列或兩列排版 */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            width: 100%;
-            max-width: 800px;
-        }
-
-        /* 3. 精美點選方塊的樣式設計 */
-        .menu-box {
-            background-color: #ffffff;
-            border-left: 6px solid #3498db; /* 左側的藍色裝飾條 */
-            border-radius: 8px;
-            padding: 25px 20px;
-            text-align: left;
-            text-decoration: none; /* 移除超連結下底線 */
-            color: #333333;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* 微弱的陰影 */
-            transition: all 0.2s ease-in-out; /* 讓滑鼠移過去的動畫平滑 */
-        }
-
-        /* 4. 當滑鼠移到方塊上時的視覺特效 */
-        .menu-box:hover {
-            transform: translateY(-5px); /* 向上微浮起來 */
-            background-color: #3498db;
-            color: #ffffff;
-            border-left-color: #2980b9;
-        }
-
-        .menu-box h3 {
-            margin: 0 0 8px 0;
-            font-size: 1.2rem;
-        }
-
-        .menu-box p {
-            margin: 0;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
+        /* 全域風格設計 */
+        body { font-family: sans-serif; margin: 0; background-color: #f4f7f6; color: #333; text-align: center; }
+        header { background: #1a365d; color: white; padding: 40px 20px; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        
+        /* 點選方塊 RWD 網格排版 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        
+        /* 點選方塊卡片樣式 */
+        .card { background: white; border-radius: 8px; padding: 40px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-decoration: none; color: #1a365d; font-weight: bold; font-size: 1.3rem; transition: transform 0.2s, box-shadow 0.2s; }
+        
+        /* 滑鼠懸停動畫效果 */
+        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); background: #e2e8f0; }
+        
+        footer { margin-top: 50px; padding: 20px; font-size: 0.9rem; color: #666; background: #e2e8f0; }
     </style>
 </head>
 <body>
 
-    <!-- 網站大標題 -->
-    <h1>新世紀領導人才培育營 24th</h1>
+    <header>
+        <h1>新世紀領導人才培育營</h1>
+        <p>南區進階課程網站</p>
+    </header>
 
-    <!-- 點選方塊大集合區域 -->
-    <div class="grid-container">
-
-        <!-- 方塊 1 -->
-        <a href="rules.html" class="menu-box">
-            <h3>📜 營期規範</h3>
-            <p>點擊了解營隊期間的所有守則</p>
-        </a>
-
-        <!-- 方塊 2 -->
-        <a href="photos.html" class="menu-box">
-            <h3>📷 相片集錦</h3>
-            <p>留存每一刻精彩的活動紀錄</p>
-        </a>
-
-        <!-- 方塊 3 -->
-        <a href="https://google.com" target="_blank" class="menu-box">
-            <h3>💬 思辨任務</h3>
-            <p>跳轉至外部討論平台或表單</p>
-        </a>
-
-        <!-- 方塊 4 -->
-        <a href="teachers.html" class="menu-box">
-            <h3>👨‍🏫 老師的話</h3>
-            <p>看看師長們給學員的心靈雞湯</p>
-        </a>
-
+    <div class="container">
+        <!-- 點選方塊區域 -->
+        <div class="grid">
+            <a href="#" class="card">📜 營期規範</a>
+            <a href="#" class="card">📰 每日營刊</a>
+            <a href="#" class="card">💡 思辨任務</a>
+            <a href="#" class="card">📸 相片集錦</a>
+            <a href="#" class="card">💬 老師的話</a>
+            <a href="#" class="card">✏️ 回饋五四三</a>
+        </div>
     </div>
+
+    <footer>
+        <p>主辦單位：教育部國民及學前教育署</p>
+    </footer>
 
 </body>
 </html>
